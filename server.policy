@@ -1,10 +1,4 @@
 grant codeBase "file:src/server/*" {
         permission java.net.SocketPermission "*:45678", "accept, listen";
 	permission java.io.FilePermission "${user.home}${/}-" , "read, write, delete, execute";
-	permission java.util.PropertyPermission "${user.home}${/}-", "write";
-	permission java.util.PropertyPermission "${user.home}${/}-", "write";
-};
-
-grant codeBase "file:${java.home}/lib/ext/*" { 
-permission java.security.AllPermission; 
 };
