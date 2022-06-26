@@ -1,0 +1,4 @@
+grant codeBase "file:src/client/*" {
+        permission java.net.SocketPermission "*:45678", "connect, resolve";
+	permission java.io.FilePermission "${user.home}${/}photosClient${/}*", "read";
+};
